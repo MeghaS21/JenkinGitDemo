@@ -15,7 +15,7 @@ public class Login {
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		WebElement uName = driver.findElement(By.cssSelector("#inputUsername")); // find the element
 
-		uName.sendKeys("megha");
+		uName.sendKeys("megha sawant");
 
 		WebElement pwd = driver.findElement(By.name("inputPassword"));
 		pwd.sendKeys("password");
