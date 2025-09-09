@@ -15,15 +15,16 @@ public class Login {
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		WebElement uName = driver.findElement(By.cssSelector("#inputUsername")); // find the element
 
-		uName.sendKeys("megha Shalin Sawant");
+		uName.sendKeys("megha");
 
 		WebElement pwd = driver.findElement(By.name("inputPassword"));
-		pwd.sendKeys("password");
+		pwd.sendKeys("password@1234");
 		WebElement btn = driver.findElement(By.cssSelector(".submit.signInBtn"));
 		
 		btn.submit();
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.className("error")).getText());
-		driver.close();	}
+		driver.close();
+		}
 
 }
